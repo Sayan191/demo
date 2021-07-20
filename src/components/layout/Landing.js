@@ -20,32 +20,6 @@ class Landing extends Component {
                 passport and JWTs
               </p>
               <br />
-              <div className="col s6">
-                <Link
-                  to="/register"
-                  style={{
-                    width: "140px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px"
-                  }}
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-                >
-                  Register
-                </Link>
-              </div>
-              <div className="col s6">
-                <Link
-                  to="/login"
-                  style={{
-                    width: "140px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px"
-                  }}
-                  className="btn btn-large btn-flat waves-effect white black-text"
-                >
-                  Log In
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -68,10 +42,10 @@ class Landing extends Component {
                           Tanmay Chakraborty
                       </div>
                       <div class="text-gray-500">
-                          Full Stack Java Developer, Dhanbad
+                          Full Stack Developer, Dhanbad
                       </div>
                       <div class="text-gray-500">
-                          <span className="text-cyan-500">eMail:</span>tanmaychakrabortydhn@gmail.com
+                          <span className="text-cyan-500">E-Mail : </span>tanmaychakrabortydhn@gmail.com
                       </div>
                   </figcaption>
               </div>
@@ -94,7 +68,7 @@ class Landing extends Component {
                           Full Stack Developer, Durgapur
                       </div>
                       <div class="text-gray-500">
-                          <span className="text-cyan-500">eMail:</span>sayantalukdar30@gmail.com 
+                          <span className="text-cyan-500">E-Mail : </span>sayantalukdar30@gmail.com 
                       </div>
                   </figcaption>
               </div>

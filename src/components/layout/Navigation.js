@@ -43,16 +43,17 @@ const Navigation = () =>{
                             Algorithm              
                         </Link> 
                         <Link
-                            to="/login"
-                            style={{
-                              fontFamily: "monospace"  ,
-                              fontSize:"19px",
-                              marginRight:"15px"  
+                          to="/login"
+                          style={{
+                              width: "95px",
+                              borderRadius: "2px",
+                              letterSpacing: "1.5px",
+                              marginRight:"25px"
                             }}
-                            className=" brand-logo right black-text"
+                          className="col-sm right btn btn-medium btn-flat waves-effect white black-text"
                         >
-                         Login        
-                        </Link>
+                          Log In
+                </Link>
                     </div>
                 </div>
         </>

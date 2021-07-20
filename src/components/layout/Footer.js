@@ -12,7 +12,7 @@ function Copyright() {
       <Typography variant="body2" color="textSecondary">
         {'Copyright © '}
         <Link color="inherit" href="https://material-ui.com/">
-          AlgoGeeks
+          AlgoForGeeks
         </Link>{' '}
         {new Date().getFullYear()}
         {'.'}
@@ -45,7 +45,7 @@ const Footer = () =>{
             <footer className={classes.footer}>
                 <hr/>
                 <Container maxWidth="sm">
-                <Typography variant="body1">AlgoGeeks || For Developers || By Developers</Typography>
+                <Typography variant="body1">AlgoForGeeks || For Developers || By Developers</Typography>
                 <Copyright />
                 </Container>
             </footer>
