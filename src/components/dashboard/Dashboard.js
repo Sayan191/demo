@@ -9,7 +9,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import {} from "../../assets/1.jpg";
 
 
 const useStyles = makeStyles({
@@ -39,7 +38,7 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Two Pointer Algorithm
+                      <blockquote>Two Pointer Algorithm</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                     Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
@@ -63,7 +62,8 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Two Pointer Algorithm
+                      <blockquote>Two Pointer Algorithm</blockquote>
+                      
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                     Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
@@ -88,7 +88,7 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Two Pointer Algorithm
+                      <blockquote>Two Pointer Algorithm</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                     Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
@@ -112,7 +112,7 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Two Pointer Algorithm
+                     <blockquote>Two Pointer Algorithm</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                     Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
