@@ -44,7 +44,7 @@ this.props.registerUser(newUser, this.props.history);
 render() {
     const { errors } = this.state;
 return (
-      <div className="container">
+      <div className="container" style={{marginTop:"60px"}}>
         <div className="row">
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
