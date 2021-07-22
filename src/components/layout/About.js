@@ -1,27 +1,18 @@
 import React, { Component } from "react";
-import "../layout/css/Landing.css"
-import { BottomNavigation } from '@material-ui/core'
-import { Link } from "react-router-dom";
+import "../layout/css/About.css"
+
 class Landing extends Component {
   render() {
     return (
       <>
-        
-        <div style={{ height: "75vh" }} className="container valign-wrapper">
-          <div className="row">
-            <div className="col s12 center-align">
-              <h4>
-                <b>Build</b> a login/auth app with the{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> stack from
-                scratch
-              </h4>
-              <p className="flow-text grey-text text-darken-1">
-                Create a (minimal) full-stack app with user authentication via
-                passport and JWTs
-              </p>
-              <br />
+        <div style={{ height: "80vh" }} className="container valign-wrapper">
+            <div className="row">
+              <div className="col s12 center-align">
+                  <div class="typewriter">
+                    <p> AlgoForGeeks || For Developers|| By Developers</p>
+                  </div>
+              </div>
             </div>
-          </div>
         </div>
         <div className=" p-4 border border-bottom border-dark">
           <h3 className=" about center" >Developers</h3>
@@ -73,7 +64,7 @@ class Landing extends Component {
                   </figcaption>
               </div>
           </div>    
-      </div>
+        </div>
       </>
     );
   }

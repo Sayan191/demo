@@ -18,7 +18,7 @@ class Navigation extends Component{
                 <div className="navbar">
                     <div className="z-depth-0 nav-wrapper white">
                         <Link
-                          to="#"
+                          to="/"
                           style={{
                             fontFamily: "monospace",
                             borderRadius: "2px",
@@ -73,18 +73,32 @@ class Navigation extends Component{
                         }
                         {
                           isAuthenticated() && 
-                          <Link
-                              style={{
-                                width: "95px",
-                                borderRadius: "2px",
-                                letterSpacing: "1.5px",
-                                marginRight:"25px"
-                              }}
-                              onClick={this.onLogoutClick}
-                              className="col-sm right btn btn-medium btn-flat waves-effect white black-text"
-                          >
-                              Logout
-                          </Link>
+                            <>
+                              <Link
+                                to="/dashboard"
+                                  style={{
+                                    width: "95px",
+                                    borderRadius: "2px",
+                                    letterSpacing: "1.5px",
+                                    marginRight:"25px"
+                                  }}
+                                  className="col-sm right btn btn-medium btn-flat waves-effect white black-text"
+                              >
+                                  Home
+                              </Link>
+                              <Link
+                                  style={{
+                                    width: "105px",
+                                    borderRadius: "2px",
+                                    letterSpacing: "1px",
+                                    marginRight:"25px"
+                                  }}
+                                  onClick={this.onLogoutClick}
+                                  className="col-sm right btn btn-medium btn-flat waves-effect white black-text"
+                              >
+                                  Logout
+                              </Link>
+                            </>
                         }
                     </div>
                 </div>

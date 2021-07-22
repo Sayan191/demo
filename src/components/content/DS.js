@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -31,10 +32,38 @@ class DS extends Component{
                         <Card className={useStyles.root}>
                           <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                              <blockquote>Array </blockquote>
-                              <blockquote>LinkedList</blockquote>
-                              <blockquote>Stack</blockquote>
-                              <blockquote>Queue</blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px", fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Array
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm  waves-effect white black-text"
+                                >
+                                  LinkledList
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Stack
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Queue
+                                </Link>
+                              </blockquote>
 
                             </Typography>
                           </CardContent>
@@ -44,10 +73,38 @@ class DS extends Component{
                         <Card className={useStyles.root}>
                           <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                              <blockquote>Binary Tree</blockquote>
-                              <blockquote>Binary Search Tree</blockquote>
-                              <blockquote>Heap</blockquote>
-                              <blockquote>Hashing</blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "120px", fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px",}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Binary Tree
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "140px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", }}
+                                      className="col sm waves-effect white black-text"
+                                >
+                                  Binary Search Tree
+                                </Link>
+                              </blockquote>
+                              <blockquote>                              
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", }}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Heap
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Hashing
+                                </Link>
+                              </blockquote>
                             </Typography>
                           </CardContent>
                         </Card>
@@ -56,9 +113,38 @@ class DS extends Component{
                         <Card className={useStyles.root}>
                           <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                              <blockquote>Graph</blockquote>
-                              <blockquote>Matrix</blockquote>
-                              <blockquote>Misc</blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Graph
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Matrix
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Misc
+                                </Link>
+                              </blockquote>
+                              <blockquote>
+                                <Link
+                                    to="#" style={{ width: "140px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                      className="col-sm waves-effect white black-text"
+                                >
+                                  Advanced Data Structure
+                                </Link>
+                              </blockquote>
                             </Typography>
                           </CardContent>
                         </Card>
@@ -70,6 +156,3 @@ class DS extends Component{
 }
 
 export default DS;
-
-
-
