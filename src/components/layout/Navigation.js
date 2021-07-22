@@ -21,21 +21,25 @@ class Navigation extends Component{
                           to="#"
                           style={{
                             fontFamily: "monospace",
+                            borderRadius: "2px",
+                            letterSpacing: "1.5px",
                             fontSize:"19px",
                             marginLeft:"19px"  
                           }}
-                          className="col-sm left black-text"
+                          className="col-sm left btn btn-medium btn-flat waves-effect white black-text"
                         >
                             About              
                         </Link>
                         <Link
-                            to="#"
+                            to="/data-structure"
                             style={{
                               fontFamily: "monospace" ,
+                              borderRadius: "2px",
+                              letterSpacing: "1.5px",
                               fontSize:"19px",
                               marginLeft:"25px"  
                             }}
-                            className="col-sm left black-text"
+                            className="col-sm left btn btn-medium btn-flat waves-effect white black-text"
                         >
                             Data-Structure              
                         </Link> 
@@ -43,10 +47,12 @@ class Navigation extends Component{
                             to="#"
                             style={{
                               fontFamily: "monospace" ,
+                              borderRadius: "2px",
+                              letterSpacing: "1.5px",
                               fontSize:"19px",
                               marginLeft:"25px"  
                             }}
-                            className="col-sm left black-text"
+                            className="col-sm left btn btn-medium btn-flat waves-effect white black-text"
                         >
                             Algorithm              
                         </Link> 
