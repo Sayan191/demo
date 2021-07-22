@@ -8,12 +8,14 @@ import store from "./store";
 import Navbar from "./components/layout/Navbar";
 import Navigation from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
-import Landing from "./components/layout/Landing";
+import About from "./components/layout/About";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import DS from "./components/content/DS"
+
+
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -40,7 +42,7 @@ class App extends Component {
           <div className="App">
             <Navbar />
             <Navigation />
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/" component={About} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Switch>
