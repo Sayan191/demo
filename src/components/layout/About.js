@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import { CopyBlock, dracula } from "react-code-blocks";
 import "../layout/css/About.css"
 
 class Landing extends Component {
