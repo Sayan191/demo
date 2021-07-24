@@ -1,5 +1,4 @@
 import React, { Component, useState } from "react";
-import { CopyBlock, dracula } from "react-code-blocks";
 import Codes from "./Codes";
 import Developers from "./Developers";
 import "../layout/css/About.css"

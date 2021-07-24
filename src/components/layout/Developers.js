@@ -1,4 +1,5 @@
-import { Component } from "react"
+import React, { Component } from "react";
+import "../layout/css/About.css"
 
 
 class Developers extends Component{
