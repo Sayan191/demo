@@ -14,6 +14,12 @@ import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import DS from "./components/content/DS"
+import Python_essentials from "./components/content/pages/python/Python_essential"
+import Python_DS_CS from "./components/content/pages/python/Python_DS_CS"
+import Java_CFW from "./components/content/pages/Java/Java_CFW"
+import Java_DS_CS from "./components/content/pages/Java/Java_DS_CS"
+import Cpp_STL from "./components/content/pages/C++/Cpp_STL"
+import Cpp_DS_CS from "./components/content/pages/C++/Cpp_DS_CS"
 
 
 // Check for token to keep user logged in
@@ -48,6 +54,12 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/data-structure" component={DS} />
+              <PrivateRoute exact path="/content/python/python_essentials" component={Python_essentials} />
+              <PrivateRoute exact path="/content/python/Python_DS_CS" component={Python_DS_CS} />
+              <PrivateRoute exact path="/content/java/Java_CFW" component={Java_CFW} />
+              <PrivateRoute exact path="/content/java/Java_DS_CS" component={Java_DS_CS} />
+              <PrivateRoute exact path="/content/C++/Cpp_STL" component={Cpp_STL} />
+              <PrivateRoute exact path="/content/C++/Cpp_DS_CS" component={Cpp_DS_CS} />
             </Switch>
             <Footer /> 
           </div>

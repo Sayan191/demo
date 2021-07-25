@@ -9,7 +9,7 @@ main() {
 ,
 
 java: 
-`import java.uti.*;
+`import java.util.*;
 import java.io.*;
 public class Welcome{
   public Welcome(){
