@@ -29,7 +29,7 @@ return (
           <b>Hey there,</b> {user.name.split(" ")[0]}
         </h4>
         <Typography variant="h3" style={{marginTop:"15px" , marginLeft:"35px"}}>
-          <b>Today's Topics</b>
+          <b>Let's get started</b>
         </Typography>
         <div style={{ height: "40vh", width:"auto"}} className="container valign-wrapper">
             <div className="col s6">
@@ -37,10 +37,10 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      <blockquote>Two Pointer Algorithm</blockquote>
+                      <blockquote>Java Data Structures and Algorithms Cheat Sheet</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                    Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
+                    A sheet with all the concepts you need for quick revision on implementation of data strtuctures and algorithms using Java.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -61,11 +61,11 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      <blockquote>Two Pointer Algorithm</blockquote>
-                      
+                      <blockquote>Java Collections Framework</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                    Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
+                    The Java collections framework is a set of classes and interfaces that implement commonly reusable 
+                    collection data structures. 
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -87,10 +87,10 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      <blockquote>Two Pointer Algorithm</blockquote>
+                      <blockquote>C++ Data Structures and Algorithms Cheat Sheet</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                    Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
+                    A sheet with all the concepts you need for quick revision on implementation of data strtuctures and algorithms using C++.
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -111,10 +111,10 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                     <blockquote>Two Pointer Algorithm</blockquote>
+                     <blockquote>C++ Standard Template Library (STL)</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                    Two pointers is really an easy and effective technique which is typically used for searching pairs in a sorted array.
+                    The Standard Template Library (STL) is a set of C++ template classes. It is a library of container classes, algorithms, and iterators.
                     </Typography>
                   </CardContent>
                 </CardActionArea>

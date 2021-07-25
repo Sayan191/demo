@@ -43,7 +43,7 @@ const Footer = () =>{
             <footer className={classes.footer}>
                 <hr/>
                 <Container maxWidth="sm">
-                <Typography variant="body1">AlgoForGeeks || For Developers || By Developers</Typography>
+                <Typography variant="body1">AlgoForGeeks || For Programmers || By Developers</Typography>
                 <Copyright />
                 </Container>
             </footer>

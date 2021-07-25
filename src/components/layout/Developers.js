@@ -16,8 +16,7 @@ class Developers extends Component{
                       <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                           <blockquote>
                               <p style={{fontFamily:"monospace",fontWeight:"bold",fontSize:"20px"}}>
-                                  “How can we evolve when regulations is 
-                                  all we know?”
+                                "Programming isn't about what you know; it's about what you can figure out.”
                               </p>
                           </blockquote>
                           <figcaption class="font-medium">
@@ -39,8 +38,7 @@ class Developers extends Component{
                       <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                           <blockquote>
                               <p style={{fontFamily:"monospace",fontWeight:"bold",fontSize:"20px"}}>
-                                  “Opportunities doesn't come up of its own.
-                                  We got to ours make ours.”
+                                "The only way to learn a new programming language is by writing programs in it."
                               </p>
                           </blockquote>
                           <figcaption class="font-medium">

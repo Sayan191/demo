@@ -11,7 +11,7 @@ class Landing extends Component {
             <div className="row">
               <div className="col s12 center-align">
                   <div class="typewriter">
-                    <p> AlgoForGeeks || For Developers|| By Developers</p>
+                    <p> AlgoForGeeks || For Programmers || By Developers</p>
                   </div>
               </div>
             </div>
