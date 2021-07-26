@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { makeStyles } from '@material-ui/core/styles';
@@ -19,8 +20,14 @@ const useStyles = makeStyles({
   },
 });
 
-class Dashboard extends Component {
+function onSubmit(e){
+  /*e.preventDefault();
+  let val =target.value;
+  navigator.clipboard.writeText(val);
+  window.alert("Copied");*/
+}
 
+class Dashboard extends Component {
 render() {
     const { user } = this.props.auth;
 return (
@@ -45,12 +52,12 @@ return (
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button size="small" color="primary" onClick={() =>  navigator.clipboard.writeText('#')} >
+                    Copy Link
                   </Button>
-                  <Button size="small" color="primary">
+                  <Link to="/content/java/Java_DS_CS" class="btn" size="small" color="primary">
                     Read
-                  </Button>
+                  </Link>
                 </CardActions>
               </Card>
             </div>
@@ -70,12 +77,12 @@ return (
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button size="small" color="primary" onClick={() =>  navigator.clipboard.writeText('#')} >
+                    Copy Link
                   </Button>
-                  <Button size="small" color="primary">
+                  <Link to="/content/java/Java_CFW" class="btn" size="small" color="primary">
                     Read
-                  </Button>
+                  </Link>
                 </CardActions>
               </Card>
             </div>
@@ -95,12 +102,12 @@ return (
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button size="small" color="primary" onClick={() =>  navigator.clipboard.writeText('#')} >
+                    Copy Link
                   </Button>
-                  <Button size="small" color="primary">
+                  <Link to="/content/C++/Cpp_DS_CS" class="btn" size="small" color="primary">
                     Read
-                  </Button>
+                  </Link>
                 </CardActions>
               </Card>
             </div>
@@ -119,17 +126,67 @@ return (
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button size="small" color="primary" onClick={() =>  navigator.clipboard.writeText('#')} >
+                    Copy Link
                   </Button>
-                  <Button size="small" color="primary">
+                  <Link to="/content/C++/Cpp_STL" class="btn" size="small" color="primary">
                     Read
-                  </Button>
+                  </Link>
                 </CardActions>
               </Card>
             </div>
 
         </div>
+        <div style={{ height: "40vh", width:"auto"}} className="container valign-wrapper">
+            <div className="col s6">
+              <Card className={useStyles.root}>
+                <CardActionArea>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      <blockquote>Python Essetials and Fundamentals Cheat Sheet</blockquote>
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                    A sheet with all the concepts you need for quick revision on implementationof  all essential built-in functions in Python.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" color="primary" onClick={() =>  navigator.clipboard.writeText('#')} >
+                    Copy Link
+                  </Button>
+                  <Link to="/content/python/python_essentials" class="btn" size="small" color="primary">
+                    Read
+                  </Link>
+                </CardActions>
+              </Card>
+            </div>
+            
+            
+            <div classname="col s6" >
+              <Card className={useStyles.root}>
+                <CardActionArea>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                     <blockquote>Python Data Structures and Algorithms</blockquote>
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                    A sheet with all the concepts you need for quick revision on implementation of data strtuctures and algorithms using Python.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" color="primary" onClick={() =>  navigator.clipboard.writeText('#')} >
+                    Copy Link
+                  </Button>
+                  <Link to="/content/python/Python_DS_CS" class="btn" size="small" color="primary">
+                    Read
+                  </Link>
+                </CardActions>
+              </Card>
+            </div>
+
+        </div>
+
       </div>
     );
   }
@@ -143,6 +200,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
 )(Dashboard);
-
-
 
