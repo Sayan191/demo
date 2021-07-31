@@ -25,7 +25,7 @@ class Cpp_STL extends Component{
             <>
                 <div>
                     <h4 className="center" style={{marginTop:"60px"}}>
-                      <b>C++ Collections FrameWork</b>
+                      <b>C++ Standard Template Library (STL)</b>
                     </h4>
                     <Typography variant="h3" style={{marginTop:"60px" , marginLeft:"35px"}}>
                       <b>Let's get started</b>
