@@ -1,4 +1,5 @@
 export default{
+// java ds cheat sheet
 Arrays:
 `import java.util.*;
 class JavaDemo {
@@ -797,5 +798,247 @@ class Graph
 
     }
 }
+`,
+//java collection framework
+ArrayList:
+`import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> cars = new ArrayList<String>();
+
+        //The ArrayList class has many useful methods. For example, to add elements to the ArrayList, use the add() method:
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+
+        //To access an element in the ArrayList, use the get() method and refer to the index number:
+        cars.get(0);
+
+        //To modify an element, use the set() method and refer to the index number:
+        cars.set(0, "Opel");
+
+        //To remove an element, use the remove() method and refer to the index number:
+        cars.remove(0);
+
+        //To remove all the elements in the ArrayList, use the clear() method:
+        cars.clear();
+
+        //To find out how many elements an ArrayList have, use the size method:
+        cars.size();
+
+        //Loop Through an ArrayList
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(cars.get(i));
+        }
+
+        // for-each loop
+        for (String i : cars) {
+            System.out.println(i);
+        }
+
+        //Another useful class in the java.util package is the Collections class, which include the sort() method for sorting lists alphabetically or numerically:
+        Collections.sort(cars);  // Sort cars
+
+    }
+}
+`,
+Vector:
+`import java.util.Vector;
+
+public class Main {
+    public static void main(String[] args) {
+        Vector<String> cars = new Vector<String>();
+
+        //To add elements to the Vector, use the add() method:
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+
+        //To access an element in the Vector, use the get() method and refer to the index number:
+        cars.get(0);
+
+        //To modify an element, use the set() method and refer to the index number:
+        cars.set(0, "Opel");
+
+        //To remove an element, use the remove() method and refer to the index number:
+        cars.remove(0);
+
+        //To remove all the elements in the Vector, use the clear() method:
+        cars.clear();
+
+        //To find out how many elements an Vector have, use the size method:
+        cars.size();
+
+        //Loop Through an Vector
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(cars.get(i));
+        }
+
+        // for-each loop
+        for (String i : cars) {
+            System.out.println(i);
+        }
+
+        //Another useful class in the java.util package is the Collections class, which include the sort() method for sorting lists alphabetically or numerically:
+        Collections.sort(cars);  // Sort cars
+
+    }
+}
+`,
+LinkedListCF:
+`// Import the LinkedList class
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<String> cars = new LinkedList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        
+        // Use addFirst() to add the item to the beginning
+        cars.addFirst("Ferrari");
+
+        // Use addLast() to add the item to the end
+        cars.addLast("Rolls Royce");
+
+        // Use removeFirst() remove the first item from the list
+        cars.removeFirst();
+
+        // Use removeLast() remove the last item from the list
+        cars.removeLast();
+
+        // Use getFirst() to display the first item in the list
+        System.out.println(cars.getFirst());
+
+        // Use getLast() to display the last item in the list
+        System.out.println(cars.getLast());
+    }
+}
+`,
+HashSet:
+`// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+    public static void main(String[] args) {
+        HashSet<String> cars = new HashSet<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("BMW");
+        cars.add("Mazda");
+        System.out.println(cars);
+
+        //To check whether an item exists in a HashSet, use the contains() method:
+        cars.contains("Mazda");
+
+        //To remove an item, use the remove() method:
+        cars.remove("Volvo");
+
+        //To remove all items, use the clear() method:
+        cars.clear();
+
+        //To find out how many items there are, use the size method
+        cars.size();
+
+        //Loop through the items of an HashSet with a for-each loop:
+        for (String i : cars) {
+            System.out.println(i);
+        }
+    }
+}
+`,
+HashMap:
+`// Import the HashMap class
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a HashMap object called capitalCities
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+        // Add keys and values (Country, City)
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
+        System.out.println(capitalCities);
+
+        //To access a value in the HashMap, use the get() method and refer to its key
+        capitalCities.get("England");
+
+        //To remove an item, use the remove() method and refer to the key:
+        capitalCities.remove("England");
+
+        //To remove all items, use the clear() method:
+        capitalCities.clear();
+
+        //To find out how many items there are, use the size() method:
+        capitalCities.size();
+
+        //Loop through the items of a HashMap with a for-each loop.
+        // Print keys
+        for (String i : capitalCities.keySet()) {
+            System.out.println(i);
+        }
+        // Print values
+        for (String i : capitalCities.values()) {
+            System.out.println(i);
+        }
+        // Print keys and values
+        for (String i : capitalCities.keySet()) {
+            System.out.println("key: " + i + " value: " + capitalCities.get(i));
+        }
+    }
+}
+`,
+Iterator:
+`// Import the ArrayList class and the Iterator class
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Make a collection
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+
+        // Get the iterator
+        Iterator<String> it = cars.iterator();
+
+        // Print the first item
+        System.out.println(it.next());
+
+        //To loop through a collection, use the hasNext() and next() methods of the Iterator:
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        //Another Example
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(12);
+        numbers.add(8);
+        numbers.add(2);
+        numbers.add(23);
+        Iterator<Integer> it2 = numbers.iterator();
+        while(it2.hasNext()) {
+            Integer i = it2.next();
+            if(i < 10) {
+                it2.remove();
+            }
+        }
+        System.out.println(numbers);
+    }
+}
 `
+
 };
