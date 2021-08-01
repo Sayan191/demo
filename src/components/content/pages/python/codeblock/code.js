@@ -126,5 +126,186 @@ export default{
     b.prevNode = a
     b.nextNode = c
     c.prevNode = b
-    `
+    `,
+    bst:`class BinaryTree(object):
+        	def __init__(self, rootObj):
+        		self.key = rootObj
+        		self.leftChild = None
+        		self.rightChild = None
+
+        	def insertLeft(self, newNode):
+        		if self.leftChild == None:
+        			self.leftChild = BinaryTree(newNode)
+        		else:
+        			t = BinaryTree(newNode)
+        			t.leftChild = self.leftChild
+        			self.leftChild = t
+
+        	def insertRight(self, newNode):
+        		if self.rightChild == None:
+        			self.rightChild = BinaryTree(newNode)
+        		else:
+        			t = BinaryTree(newNode)
+        			t.rightChild(self.rightChild)
+        			self.rightChild=(t)
+
+        	# bring back Object Address values
+        	def getRightChild(self):
+        		return self.rightChild
+
+        	def getLeftChild(self):
+        		return self.leftChild
+
+        	def setRootVal(self, obj):
+        		self.key = obj
+
+        	def getRootVal(self):
+        		return self.key
+
+        r = BinaryTree('a')
+        r.getRootVal()
+        # 'a'
+        print r.getLeftChild()
+        # None
+        r.insertLeft('b')
+        r.getLeftChild()
+        # get address of another binary tree
+        r.getLeftChild().getRootVal()
+        # 'b'
+    `,
+    PreTree:`
+    def preorder(tree):
+	if tree != None:
+		print(tree.getRootVal())
+		preorder(tree.getLeftChild())
+		preorder(tree.getRightChild())
+
+    # implementation as a BinaryTree method
+    # generally not what you will want to do
+    def preorder(self):
+    	print(self.key)
+    	if self.leftChild:
+    		self.leftChild.preorder()
+    	if self.rightChild:
+    		self.rightChild.preorder()
+    `,
+    inTree:`
+    def inorder(tree):
+	if tree != None:
+		inorder(tree.getLeftChild())
+		print(tree.getRootVal()) 				# print root for Proof of Concept
+		inorder(tree.getRightChild())
+
+    `,
+    postTree:`
+    def postorder(tree):
+	if tree != None:
+		preorder(tree.getLeftChild())
+		preorder(tree.getRightChild())
+		print(tree.getRootVal())
+
+    `,
+    BinaryHeap:`
+        # BinaryHeap() - create new heap
+        # insert(k) - adds a new item to the heap
+        # findMin() - returns the item with the minimum key value, leaving item in the heap
+        # delMin() - returns the item with the minimum key value, removing item from the heap
+        	# requires that we take the last position and set it to the root
+        	# restore order by pushing down new root node
+        	# swap new root with smallest child recursively
+        # isEmpty()
+        # size
+        # buildHeap(list) builds a new heap from a list of keys
+        	# we can build a heap in O(n) operations
+
+        class BinaryHeap(object):
+        	def __init__(self):
+        		self.heapList = [0]
+        		self.currentSize = 0
+
+        	def percUp(self, i):
+        		while i // 2 > 0:
+        			if self.heapList[i] < self.heapList[i // 2]:
+        				tmp = self.heapList[i//2]
+        				self.heapList[i//2] = self.heapList[i]
+        				self.heapList[i] = tmp
+        			i = i // 2
+
+        	def insert(self, k):
+        		self.heapList.append(k)
+        		self.currentSize = self.currentSize + 1
+        		self.percUp(self.currentSize)
+
+        	def percDown(self, i):
+        		while (i * 2) <= self.currentSize:
+        			mc = self.minChild(i)
+        			if self.heapList[i] > self.heapList[mc]:
+        				tmp = self.heapList[i]
+        				self.heapList[i] = self.heapList[mc]
+        				self.heapList[mc] = tmp
+        			i = mc
+
+        	def minChild(self, i):
+        		if i * 2 + 1 > self.currentSize:
+        			return i * 2
+        		else:
+        			if self.heapList[i*2] < self.heapList[i*2+1]:
+        				return i * 2
+        			else:
+        				return i * 2 + 1
+
+        	def delMin(self):
+        		retVal = self.heapList[1]
+        		self.heapList[1] = self.heapList[self.currentSize]
+        		self.currentSize = self.currentSize - 1
+        		self.heapList.pop()
+        		self.percDown(1)
+        		return retVal
+
+        	def buildHeap(self, aList):
+        		i = len(aList) // 2
+        		self.currentSize = len(aList)
+        		self.heapList = [0] + aList[:]
+        		while (i > 0):
+        			self.percDown(i)
+        			i = i - 1
+        `,
+        BinarySearch:`
+        def recBinSearch(arr, el):
+            if len(arr) == 0:
+                return False
+            else:
+                mid = len(arr)/2
+                if arr[mid] == el:
+                    return True
+                else:
+                    if el < arr[mid]:
+                        return recBinSearch(arr[:mid], el)
+                    else:
+                        return recBinSearch(arr[mid+1:], el])
+        `,
+        HashTable:`
+        class HashTable:  
+            def __init__(self):
+                self.MAX = 100
+                self.arr = [None for i in range(self.MAX)]
+                
+            def get_hash(self, key):
+                hash = 0
+                for char in key:
+                    hash += ord(char)
+                return hash % self.MAX
+            
+            def __getitem__(self, index):
+                h = self.get_hash(index)
+                return self.arr[h]
+            
+            def __setitem__(self, key, val):
+                h = self.get_hash(key)
+                self.arr[h] = val    
+                
+            def __delitem__(self, key):
+                h = self.get_hash(key)
+                self.arr[h] = None
+        `
 }
