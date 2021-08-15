@@ -44,7 +44,7 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      <blockquote>Java Data Structures and Algorithms Cheat Sheet</blockquote>
+                      <blockquote>Java Data Structures Basics</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                     A sheet with all the concepts you need for quick revision on implementation of data strtuctures and algorithms using Java.
@@ -94,7 +94,7 @@ return (
                 <CardActionArea>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                      <blockquote>C++ Data Structures and Algorithms Cheat Sheet</blockquote>
+                      <blockquote>C++ Data Structures Basics</blockquote>
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                     A sheet with all the concepts you need for quick revision on implementation of data strtuctures and algorithms using C++.

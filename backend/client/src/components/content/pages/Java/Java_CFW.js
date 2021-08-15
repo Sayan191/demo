@@ -25,7 +25,7 @@ class Java_CFW extends Component{
           <>
               <div>
                   <h4 className="center" style={{marginTop:"60px"}}>
-                    <b>Java Collection FrameWorks</b>
+                    <b>Java Collections Framework</b>
                   </h4>
                   <Typography variant="h3" style={{marginTop:"60px" , marginLeft:"35px"}}>
                     <b>Let's get started</b>
