@@ -11,6 +11,11 @@ const User = require("../../models/User");
 // @route POST api/users/register
 // @desc Register user
 // @access Public
+router.get("online",(req,res)=>{
+  return res.status(200).json({
+    message:"Bhalo to Boss"
+  })
+})
 router.post("/register", (req, res) => {
     // Form validation
   const { errors, isValid } = validateRegisterInput(req.body);
