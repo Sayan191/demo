@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const users = require("./routes/api/users");
 const app = express();
+const path = require('path');
+
 // Bodyparser middleware
 app.use(
   express.urlencoded({
@@ -23,6 +25,18 @@ mongoose
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
 // Passport middleware
+
+//Serve static assets if in production
+if (process.env.NODE_ENV == 'production'){
+  // Set static folder
+  app.use(express.static('client/build'));
+
+  app.get('*' , (req,res)=>{
+    res.sendFile(apth.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+
+
 app.use(passport.initialize());
 // Passport config
 require("./config/passport")(passport);
