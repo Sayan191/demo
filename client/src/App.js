@@ -20,7 +20,18 @@ import Java_CFW from "./components/content/pages/Java/Java_CFW"
 import Java_DS_CS from "./components/content/pages/Java/Java_DS_CS"
 import Cpp_STL from "./components/content/pages/C++/Cpp_STL"
 import Cpp_DS_CS from "./components/content/pages/C++/Cpp_DS_CS"
-
+import Array from "./components/content/DataStructure/Array/Array"
+import BinarySearchTree from "./components/content/DataStructure/BinarySearchTree/BinarySearchTree"
+import BinaryTree from "./components/content/DataStructure/BinaryTree/BinaryTree"
+import Heap from "./components/content/DataStructure/Heap/Heap"
+import LinkedList from "./components/content/DataStructure/LinkedList/LinkedList"
+import Queue from "./components/content/DataStructure/Queue/Queue"
+import Stack from "./components/content/DataStructure/Stack/Stack"
+import AdvancedDS from "./components/content/DataStructure/AdvancedDS/AdvancedDS"
+import Hashing from "./components/content/DataStructure/Hashing/Hashing"
+import Matrix from "./components/content/DataStructure/Matrix/Matrix"
+import Misc from "./components/content/DataStructure/Misc/Misc"
+import Graph from "./components/content/DataStructure/Graph/Graph"
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -54,6 +65,18 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/data-structure" component={DS} />
+              <PrivateRoute exact path="/data-structure/array" component={Array} />
+              <PrivateRoute exact path="/data-structure/binary_search_tree" component={BinarySearchTree} />
+              <PrivateRoute exact path="/data-structure/binary_tree" component={BinaryTree} />
+              <PrivateRoute exact path="/data-structure/heap" component={Heap} />
+              <PrivateRoute exact path="/data-structure/linkedlist" component={LinkedList} />
+              <PrivateRoute exact path="/data-structure/queue" component={Queue} />
+              <PrivateRoute exact path="/data-structure/stack" component={Stack} />
+              <PrivateRoute exact path="/data-structure/advanced" component={AdvancedDS} />
+              <PrivateRoute exact path="/data-structure/misc" component={Misc} />
+              <PrivateRoute exact path="/data-structure/matrix" component={Matrix} />
+              <PrivateRoute exact path="/data-structure/hashing" component={Hashing} />
+              <PrivateRoute exact path="/data-structure/graph" component={Graph} />
               <PrivateRoute exact path="/content/python/python_essentials" component={Python_essentials} />
               <PrivateRoute exact path="/content/python/Python_DS_CS" component={Python_DS_CS} />
               <PrivateRoute exact path="/content/java/Java_CFW" component={Java_CFW} />
