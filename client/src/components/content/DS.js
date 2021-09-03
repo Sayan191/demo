@@ -34,7 +34,7 @@ class DS extends Component{
                             <Typography gutterBottom variant="h5" component="h2">
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px", fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/array" style={{ width: "95px", fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Array
@@ -42,7 +42,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/linkedlist" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm  waves-effect white black-text"
                                 >
                                   LinkledList
@@ -50,7 +50,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/stack" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Stack
@@ -58,7 +58,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/queue" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Queue
@@ -75,7 +75,7 @@ class DS extends Component{
                             <Typography gutterBottom variant="h5" component="h2">
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "120px", fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px",}}
+                                    to="/data-structure/binary_tree" style={{ width: "120px", fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px",}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Binary Tree
@@ -83,7 +83,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "140px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", }}
+                                    to="/data-structure/binary_search_tree" style={{ width: "140px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", }}
                                       className="col sm waves-effect white black-text"
                                 >
                                   Binary Search Tree
@@ -91,7 +91,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>                              
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", }}
+                                    to="/data-structure/heap" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", }}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Heap
@@ -99,7 +99,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/hashing" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Hashing
@@ -115,7 +115,7 @@ class DS extends Component{
                             <Typography gutterBottom variant="h5" component="h2">
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/graph" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Graph
@@ -123,7 +123,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="matrix" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Matrix
@@ -131,7 +131,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="misc" style={{ width: "95px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Misc
@@ -139,7 +139,7 @@ class DS extends Component{
                               </blockquote>
                               <blockquote>
                                 <Link
-                                    to="#" style={{ width: "140px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
+                                    to="/data-structure/advanced" style={{ width: "140px",  fontSize:"17px",borderRadius: "2px", letterSpacing: "1.5px", marginRight:"25px"}}
                                       className="col-sm waves-effect white black-text"
                                 >
                                   Advanced Data Structure
