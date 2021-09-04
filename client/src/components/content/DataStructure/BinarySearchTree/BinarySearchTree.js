@@ -8,7 +8,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Codes_Ref from "./Codes_Ref"
 
 const useStyles = makeStyles({
     root: {
@@ -23,7 +22,7 @@ class BinarySearchTree extends Component{
   render(){
       return(
           <>
-            <Typography variant="h3" style={{marginTop:"15px" , marginLeft:"35px"}}>
+            <Typography variant="h3" style={{marginTop:"60px" , marginLeft:"35px"}}>
               <b>Let's get started</b>
             </Typography>
             <div style={{ height: "40vh", width:"auto"}} className="container valign-wrapper">
